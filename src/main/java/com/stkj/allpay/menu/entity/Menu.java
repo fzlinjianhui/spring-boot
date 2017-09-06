@@ -6,13 +6,19 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * 菜单实体类
+ * @author 大辉辉
+ * @time 2017年9月6日 下午1:46:50
+ * @company 商田科技
+ */
 @Entity
 @Table(name="st_system_menu")
 public class Menu {
 
 	@Id
 	@GeneratedValue
-	private Long id;
+	private Integer id;
 	
 	private String name;
 	
@@ -23,13 +29,26 @@ public class Menu {
 	
 	private String prop;
 
-	public Long getId() {
+	private Integer sort;
+	
+	
+	
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
+
+	public Integer getSort() {
+		return sort;
+	}
+
+	public void setSort(Integer sort) {
+		this.sort = sort;
+	}
+
 
 	public String getName() {
 		return name;
