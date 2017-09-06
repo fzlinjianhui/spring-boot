@@ -1,0 +1,14 @@
+.test{border:1px solid red}
+.index-top{
+	width: 100%;
+}
+.index-main{
+	width: 100%;
+}
+.index-main-left{
+	position:absolute;
+	width:200px;
+	height:90%;
+	overflow-y: scroll; 
+	padding-right:15px;
+}
