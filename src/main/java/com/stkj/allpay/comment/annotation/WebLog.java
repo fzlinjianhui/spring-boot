@@ -1,4 +1,4 @@
-package com.stkj.allpay.cmment.annotation;
+package com.stkj.allpay.comment.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

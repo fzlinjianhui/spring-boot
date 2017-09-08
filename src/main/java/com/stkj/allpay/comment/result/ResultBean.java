@@ -1,4 +1,4 @@
-package com.stkj.allpay.cmment.result;
+package com.stkj.allpay.comment.result;
 
 import java.io.Serializable;
 

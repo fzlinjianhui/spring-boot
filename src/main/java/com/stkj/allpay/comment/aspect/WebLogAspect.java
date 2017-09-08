@@ -1,4 +1,4 @@
-package com.stkj.allpay.cmment.aspect;
+package com.stkj.allpay.comment.aspect;
 
 import java.util.Arrays;
 
@@ -23,7 +23,7 @@ public class WebLogAspect {
 
 	private static final Logger logger = LoggerFactory.getLogger(WebLogAspect.class);
 	
-	@Pointcut("@annotation(com.stkj.allpay.cmment.annotation.WebLog)")
+	@Pointcut("@annotation(com.stkj.allpay.comment.annotation.WebLog)")
 	public void webLog() {
 	}
 

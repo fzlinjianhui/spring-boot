@@ -12,11 +12,27 @@ import com.stkj.allpay.menu.repository.MenuRespository;
 public class MenuService {
 
 	@Autowired
-	private MenuRespository meunRespository;
+	private MenuRespository menuRespository;
 	
 	public List<Menu> getAllMenu(){
 		
-		return meunRespository.findAll();
+		return menuRespository.findAll();
 		
+	}
+	
+	public Menu findMenuById(Integer id){
+		return menuRespository.findOne(id);
+	}
+	
+	public Menu saveMenu(Menu m){
+		return menuRespository.save(m);
+	}
+	
+	public List<Menu> getMenuByName(String name){
+		return menuRespository.findByName(name);
+	}
+	
+	public Menu updateMenu(Menu m){
+		return menuRespository.save(m);
 	}
 }
